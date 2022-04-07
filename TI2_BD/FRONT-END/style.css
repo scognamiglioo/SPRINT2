@@ -1,0 +1,186 @@
+body{
+    background-color: #F5EEE6;
+}
+
+a:link {text-decoration: none;}
+
+
+
+/*-------------------------------Cabecalho-----------------------------*/
+.cabecalho{
+    margin-top: 20px;
+    background-color: #6D0A0A;
+    padding: 20px;
+}
+
+.cabecalho img{
+   margin-left: 65%;
+   justify-content: center;
+}
+
+.cabecalho p{
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+@media screen and (max-width:600px){
+
+    .cabecalho img{
+        margin-left: 30%;
+    }
+
+    .cabecalho p{
+        margin-left: 30%;
+        margin-top: 0px;
+    }
+}
+
+
+
+/*-------------------------------Main-----------------------------*/
+
+.formulario{
+    background-color:#6D0A0A;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.formulario .titulo{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.formulario .regras{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario .selectVazio{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.formulario .input{
+    margin-top: 20px;
+}
+
+
+.formulario .dropBotao{
+    background-color: #a70d0d;
+    color: #ffffff;
+}
+
+.formulario .botaoConfirma{
+    padding: 50px;
+}
+
+.formulario .botaoAgendamento{
+    background-color: #a70d0d;
+    color: #ffffff;
+    
+}
+
+#tela{
+    color: white;
+}
+
+.btn-dropdown{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/*-------------------------------Regras.html-----------------------------*/
+
+.regras{
+    background-color:#6D0A0A;
+    margin-top: 50px;
+}
+
+.regras .titulo{
+    text-align: center;
+    font-size: 35px;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    margin-top: 80px;
+    text-decoration:underline;
+}
+
+.listaRegras{
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.listaRegras li{
+    margin-top: 10px;
+}
+
+
+
+/*-------------------------------Opções de Centros.html-----------------------------*/
+
+.opcoesCentros{
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+
+.opcoesCentros img{
+    width: 320px;
+    background-color: #F5EEE6;
+    border: 3px solid #6D0A0A;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+.informacaoCentro{
+    background-color: #F5EEE6;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.opcoesCentros h1{
+    color: rgb(150, 150, 150);
+    text-align: center;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.opcoesCentros p{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width:1200px){
+
+    .foto2{
+        margin-right: 50px;
+    }
+}

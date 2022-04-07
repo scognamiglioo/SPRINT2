@@ -1,0 +1,38 @@
+body {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+  
+    background-color: #6D0A0A;
+}
+
+header, footer {
+    background-color: #6D0A0A;
+}
+
+.header > .nav-menu {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.header > .nav-menu  > .menu-link {
+    margin: 5px 12px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header > .nav-menu  h1 {
+    font-size: 1.7em;
+    display: inline;
+}
+
+
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+}

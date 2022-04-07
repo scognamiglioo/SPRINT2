@@ -1,0 +1,61 @@
+main {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 0.8rem;
+}
+
+main > section {
+    align-items: center;
+    justify-content: center;
+}
+
+main > section img {
+    border-radius: 1.5rem;
+}
+
+main > section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 10px;
+    border-bottom: 1px solid #CD0000;
+}
+
+main > section p {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+main > section a {
+    color: rgb(231, 231, 231);
+}
+
+main > section a:hover {
+    color: #fff;
+}
+
+main > section button {
+    background-color: #CD0000;
+    border: 0;
+    border-radius: 1rem;
+    padding: 7px;
+    color: #fff;
+    font-size: 0.7em;
+}
+
+main > .about-us {
+    margin-top: 15px;
+}
+
+main > .about-us > .logo-puc {
+   text-align: center;
+}
+
+main > .about-us > .text-about-platform > h3 {
+    font-size: 1.2em;
+    border-bottom: 1px solid #dfdfdf;
+    text-align: center;
+    padding-bottom: 3px;
+}

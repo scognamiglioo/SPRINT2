@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="db.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <script src="monta_header.js"></script>
+
+    <title>Centros de Coleta</title>
+</head>
+
+<body>
+
+    <header class="container-fluid header">
+        <nav class="row nav-menu" id="nav-menu">
+            <a href="index.html" class="menu-link">
+                <div class="logo">
+                    <i class="fas fa-tint" style="font-size: 1.7em;"></i>
+                    <h1>HEMOVIDAS</h1>
+                </div>
+            </a>
+            <a href="index.html#about-us" class="menu-link">Sobre Nós</a>
+            <a href="pageDoeSangue.html" class="menu-link">Doe Sangue</a>
+        </nav>
+    </header>
+
+
+    <main class="container main">
+
+        <div id="formDoacao" class="row formulario">
+
+            <div class="col-12">
+                <h1 class="titulo" style="font-family: 'Fredoka One', cursive">Escolha o Centro de Coleta</h1>
+            </div>
+
+            <div class="row opcoesCentros" style="margin-top: 50px;">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5" onclick="selectCentro('Hemominas')">
+                    <a href="pageAgendamento.html">
+                        <img src="images/hemominas2.png">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 informacaoCentro" id="incluirContato2"
+                    onclick="selectCentro('Hemominas')">
+                    <a href="pageAgendamento.html">
+                        <h1 id="nome" name="nome" onclick="Hemominas()" style="font-family: 'Fredoka One', cursive">Hemoninas</h1>
+                        <p><strong>Endereço: </strong>Alameda Ezequiel Dias, 321 - Santa Efigênia, Belo Horizonte</p>
+                        <p><strong>Funcionamento: </strong>Segunda a sexta: 07:00-18:30</p>
+                        <p><strong>Telefone: </strong>(31) 3768-4500</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row opcoesCentros">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5" onclick="selectCentro('Hemonucleo Taubate')">
+                    <a href="pageAgendamento.html">
+                        <img class="foto2" src="images/hemonucleo.png">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 informacaoCentro"
+                    onclick="selectCentro('Hemonucleo Taubate')" >
+                    <a href="pageAgendamento.html">
+                        <h1 id="nome" name="nome" onclick="Hemonucleo()" style="font-family: 'Fredoka One', cursive">Hemonúcleo Taubaté</h1>
+                        <p><strong>Endereço: </strong>Avenida Inglaterra, 190 - Jardim das Nações, Taubaté</p>
+                        <p><strong>Funcionamento: </strong>Segunda a sexta: 08:00-18:30</p>
+                        <p><strong>Telefone: </strong>(12) 3624-1273</p>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer class="container-fluid footer">
+        Copyright 2021 - Disciplina de Trabalho Interdisciplinar: Aplicações Web - <b>ICEI PUC Minas</b>
+    </footer>
+
+
+    <script src="centro.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

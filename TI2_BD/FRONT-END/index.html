@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="pageLanding.css">
+    <script src="db.js"></script>
+    <script src="monta_header.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid header">
+        <nav class="row nav-menu" id="nav-menu">
+            <a href="index.html" class="menu-link">
+                <div class="logo">
+                    <i class="fas fa-tint" style="font-size: 1.7em;"></i>
+                    <h1>HEMOVIDAS</h1>
+                </div>
+            </a>
+            <a href="index.html#about-us" class="menu-link">Sobre Nós</a>
+            <a href="pageDoeSangue.html" class="menu-link">Doe Sangue</a>
+        </nav>
+    </header>
+
+    <main class="container">    
+        <section class="porque-doar row">
+            <img src="images/img-doe-sangue.png" alt="Imagem Doe Sangue" class="col-8 col-sm-8 col-md-5">
+            <div class="col-8 col-sm-8 col-md-5 porque-doar-text">
+                <h2>Por que doar sangue?</h2>
+                <p>A doação de sangue é um ato voluntário que pode ajudar a salvar muitas vidas. Em cada doação, uma
+                    pessoa doa, no máximo, 450 ml de sangue e essa única doação pode salvar a vida de até quatro
+                    pessoas. Vale destacar que, em cerca de um dia, o organismo já repõe a quantidade de sangue que foi
+                    retirada na doação. Além disso, doar sangue é um ato seguro e todos os materiais usados no
+                    procedimento são descartáveis. Desse modo, não há riscos de você ser contaminado ao doar sangue.</p>
+            </div>
+        </section>
+
+        <section class="requisitos-doacao row">
+            <h2 class="col-10">Quero doar! Quais os requisitos?</h2>
+            <p class="col-10">
+                - Idade entre 16 e 69 anos. Menores de idade devem possuir autorização do responsável e pessoas entre 60
+                e 69 anos só podem doar se já forem doadores frequentes;<br>
+                - Pesar no mínimo 50 kg;<br>
+                - Estar bem alimentado, porém se a doação for feita após o almoço aguardar 2 horas;<br>
+                - Ter dormido pelo menos 6 horas nas últimas 24 horas;<br>
+                - Apresentar documento de identificação com foto emitido por órgão oficial
+            </p>
+        </section>
+
+        <section class="escolha-centro row">
+            <h2 class="col-10">Nossa plataforma possui Hemocentros parceiros</h2>
+            
+            <div class="col-4">
+                <p>Quer agendar uma coleta? <a href="page_cadastroUsuarioPessoa.html">Cadastre-se em nossa plataforma</a> e visite a página de Hemocentros parceiros para realizar seu agendamento.</p>
+                <button id="btnAgendamento">Já possui cadastro? Faça seu agendamento agora <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <img src="images/banner-doacao.png" alt="Banner Doação" class="col-6">
+           
+        </section>
+
+        <section class="about-us row">
+            <h2 class="col-10">Sobre Nós</h2>
+            <div class="col-3 logo-puc">
+                <img src="images/logo_puc_transparente.png" alt="Logo PUC-MINAS">
+                <h3>PUC-MINAS</h3>
+            </div>
+
+            <div class="text-about-platform col-7" id="about-us">
+                <h3>Como surgiu a Salve Vidas?</h3>
+                <p>A <span style="font-style: italic;">"Salve Vidas"</span> é uma iniciativa de alunos da disciplina de <span style="font-style: italic;">"Trabalho Interdisciplinar: Aplicações WEB"</span>, presente no primeiro período do curso de Ciência da Computação da PUC-MINAS. Nesta disciplina, é proposto no início do semestre que os alunos buscassem problemas ou dores que assolam um público específico - no caso deste grupo, o problema sugerido fora os baixos números de doação de sangue no Brasil. A <span style="font-style: italic;">"Salve Vidas"</span>, portanto, é uma proposta de solução para as dores que a baixa doação de sangue gera em diversas vítimas.</p>
+                <p>Para mais informações sobre o projeto acesse <a href="https://github.com/ICEI-PUC-Minas-PMGCC-TI/tiaw-pmg-cc-m-20212-doacao-de-sangue" target="_blank">este link</a> onde documentamos todo o processo de concepção do trabalho.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="container-fluid footer">
+        Copyright 2021 - Disciplina de Trabalho Interdisciplinar: Aplicações Web - <b>ICEI PUC Minas</b>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="db.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="layout.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    
+    <script src="monta_header.js"></script>
+    
+
+    <title>Agendamento</title>
+  </head>
+
+  <body> 
+
+    <header class="container-fluid header">
+        <nav class="row nav-menu" id="nav-menu">
+            <a href="index.html" class="menu-link">
+                <div class="logo">
+                    <i class="fas fa-tint" style="font-size: 1.7em;"></i>
+                    <h1>HEMOVIDAS<h1>
+                </div>
+            </a>
+            <a href="index.html#about-us" class="menu-link">Sobre Nós</a>
+            <a href="pageDoeSangue.html" class="menu-link">Doe Sangue</a>
+        </nav>
+    </header>
+
+    <main class="container main">
+
+        <div id="formDoacao" class="row formulario">
+
+            <!-- TITULO-->
+
+            <div class="col-12">
+                <h1 class="titulo" style="font-family: 'Fredoka One', cursive">Agende sua Coleta</h1> 
+            </div>
+
+            
+
+
+            <!-- LINK COM REGRAS ANTES DE DOAR-->
+
+            <div class="col-12">
+                <p class="regras">Antes de doar, confira as condições e restrições para a doação <a href="pageRegrasDoacao.html" target="_blank">Clicando Aqui </a></p>
+            </div>
+
+            <!-- UNIDADE DE DOACAO -->
+            <div class="col-12">
+                <input id="campoUnidade" class="form-control" type="text" value="teste" aria-label="Disabled input example" disabled readonly>
+            </div>
+
+
+            <!-- DATA DE DOACAO -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 input">
+                <select id="campoData"  class="form-select btn-dropdown" type="text" aria-label="Default select example">
+                    <option class="selectVazio">Escolha uma Data</option>  
+                    <option value="08/11">11/12</option>
+                    <option value="09/11">12/12</option>
+                    <option value="10/11">13/12 </option>
+                    <option value="11/11">14/12 </option>
+                    <option value="12/11">15/12 </option>
+                    <option value="13/11">16/12 </option>
+                    <option value="13/11">17/12 </option>
+                    <option value="13/11">18/12 </option>
+                </select>
+            </div>
+
+
+            <!-- HORARIO DE DOACAO -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 input">
+                <select id="campoHora" class="form-select btn-dropdown" type="text" aria-label="Default select example">
+                    <option class="selectVazio">Escolha o horário</option>  
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00 </option>
+                    <option value="08:30">08:30 </option>
+                    <option value="09:00">09:00 </option>
+                    <option value="09:30">09:30 </option>
+                    <option value="10:00">10:00 </option>
+                    <option value="10:30">10:30 </option>
+                    <option value="11:00">11:00 </option>
+
+                </select>
+            </div>
+
+
+            <!-- NOME -->
+            <div class="col-12 input">
+                <input id="campoNome" class="form-control" type="text" placeholder="Digite seu nome">
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="col-12 input">
+                <input id="campoEmail" class="form-control" type="text" placeholder="Digite seu email">
+            </div>
+
+
+            <!-- CPF -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 input">
+                <input id="campoCpf" class="form-control" type="text" placeholder="CPF">
+            </div>
+
+
+            <!-- NASCIMENTO -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 input">
+                <input id="campoNascimento" class="form-control" type="text" placeholder="Data de nascimento">
+            </div>
+
+
+            <!-- RG -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 input">
+                <input id="campoRg" class="form-control" type="text" placeholder="RG">
+            </div>
+
+
+            <!-- CELULAR -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 input">
+                <input id="campoCelular" class="form-control" type="text" placeholder="Telefone Celular">
+            </div>
+
+
+
+            <!-- BOTÕES -->
+            <div class="d-grid gap-2 col-12 mx-auto botaoConfirma">
+                <button id="btnIncluirContato" class="btn btn btn-light botaoAgendamento" type="button" style="width: 100%;">Confirmar Agendamento</button>
+            </div>
+
+            <div class="d-grid gap-2 col-12 mx-auto botaoConfirma">
+                <button id="btnCarregaDados" class="btn btn btn-light botaoAgendamento" type="button" style="width: 100%;">Agendamentos</button>
+            </div>
+
+            <div id="tela"></div>
+
+        </div>
+
+    </main>
+
+    <footer class="container-fluid footer">
+        Copyright 2021 - Disciplina de Trabalho Interdisciplinar: Aplicações Web - <b>ICEI PUC Minas</b>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="opcaoCentro.js"></script>
+  </body>
+
+</html>
+
+
+<!-- <select id="campoUnidade" class="form-select" aria-label="Default select example">
+                    <option class="selectVazio">Selecione uma unidade</option>
+                    <option value="Hemominas">Hemominas</option>
+                    <option value="Vita Hemoterapia">Vita Hemoterapia</option>
+                    <option value="Felicio Rocho">Felicio Rocho </option>
+                </select>-->

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
+
+    <title>Cadastro de Doador</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="form.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="db.js"></script>
+</head>
+
+<body>
+    
+    <main class="container">
+        <div class="row">
+            <a href="index.html" style="color: #fff;" class="col-1"><i class="fas fa-arrow-circle-left"></i></a>
+        </div>
+    
+        <form method="post" class="container">
+            <h1>Cadastro de Doador</h1>
+            <p>(*)Campos obrigatórios</p>
+            <fieldset>
+                <legend>Informações para Login</legend>
+
+                <div class="input-block">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email">
+                    <span id="campo-obrigatorio">*</span>
+                </div>
+
+                <div class="input-block">
+                    <label for="senha">Senha: </label>
+                    <input type="password" id="senha" name="senha">
+                    <span id="campo-obrigatorio">*</span>
+                </div>
+
+                <div class="input-block">
+                    <label for="confirma_senha">Confirme sua senha: </label>
+                    <input type="password" id="confirma_senha" name="confirma_senha">
+                    <span id="campo-obrigatorio">*</span>
+                </div>
+
+                <div class="input-block">
+                    <label for="mostra_senha">Mostrar senha</label>
+                    <input type="checkbox" id="mostra_senha" name="mostra_senha">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações do Usuário</legend>
+                <div class="input-block">
+                    <label for="cpf">CPF: </label>
+                    <input type="text" id="cpf" name="cpf">
+                    <span id="campo-obrigatorio">*</span>
+                </div>
+
+                <div class="input-block">
+                    <label for="foto">Foto <small>(URL)</small>: </label>
+                    <input type="url" id="foto" name="foto">
+                </div>
+
+                <div class="input-block">
+                    <label for="nome_completo">Nome Completo: </label>
+                    <input type="text" id="nome_completo" name="nome_completo">
+                    <span id="campo-obrigatorio">*</span>
+                </div>
+
+                <div class="input-block">
+                    <label for="telefone_pessoal">Telefone de Contato: </label>
+                    <input type="text" id="telefone_pessoal" name="telefone_pessoal">
+                    <span id="campo-obrigatorio">*</span>
+                </div>
+
+                <div class="input-block">
+                    <label for="cep">CEP: </label>
+                    <input type="text" id="cep" name="cep">
+                </div>
+
+                <div class="input-block">
+                    <label for="cidade">Cidade: </label>
+                    <input type="text" id="cidade" name="cidade">
+                    <span id="campo-obrigatorio">*</span>
+                </div>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <div class="input-block">
+                        <label for="bairro">Bairro: </label>
+                        <input type="text" id="bairro" name="bairro">
+                        <span id="campo-obrigatorio">*</span>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="rua">Rua: </label>
+                        <input type="text" id="rua" name="rua">
+                        <span id="campo-obrigatorio">*</span>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="numero">Número: </label>
+                        <input type="text" id="numero" name="numero">
+                        <span id="campo-obrigatorio">*</span>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="complemento">Complemento: </label>
+                        <input type="text" id="complemento" name="complemento">
+                    </div>
+                </fieldset>
+            </fieldset>
+
+            <fieldset class="campo-tipo-sanguineo">
+                <legend>Tipo Sanguíneo <span style="font-size: 0.6em;" id="campo-obrigatorio">*</span></legend>
+                
+
+                <div class="box-tipos-sanguineos">
+                    <label for="sangue-A+">A+</label>
+                    <input type="radio" id="sangue-A+" name="tipo_sanguineo" value="A+">
+                    
+                    <label for="sangue-A-">A-</label>
+                    <input type="radio" id="sangue-A-" name="tipo_sanguineo" value="A-">
+                    
+                    <label for="sangue-B+">B+</label>
+                    <input type="radio" id="sangue-B+" name="tipo_sanguineo" value="B+">
+                    
+                    <label for="sangue-B-">B-</label>
+                    <input type="radio" id="sangue-B-" name="tipo_sanguineo" value="B-">
+                    
+                    <label for="sangue-AB+">AB+</label>
+                    <input type="radio" id="sangue-AB+" name="tipo_sanguineo" value="AB+">
+                    
+                    <label for="sangue-AB-">AB-</label>
+                    <input type="radio" id="sangue-AB-" name="tipo_sanguineo" value="AB-">
+                    
+                    <label for="sangue-O+">O+</label>
+                    <input type="radio" id="sangue-O+" name="tipo_sanguineo" value="O+">
+                    
+                    <label for="sangue-O-">O-</label>
+                    <input type="radio" id="sangue-O-" name="tipo_sanguineo" value="O-">
+                </div>
+            </fieldset>
+
+            <button type="button" class="btn btn-light" id="btnVoltar">Cancelar</button>
+            <button type="button" class="btn btn-success" id="btnCriarDoador">Salvar</button>
+        </form>
+    </main>
+
+    <script src="cadastro.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
